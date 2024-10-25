@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/hesabim_menu_kisisel_bilgiler"
+        android:title="Kişisel Bilgiler">
+
+    </item>
+    <item android:id="@+id/hesabim_arkadaslar"
+        android:title="Arkadaşlarım">
+
+    </item>
+    <item android:id="@+id/hesabim_menu_duzenle"
+        android:title="Düzenle">
+
+    </item>
+    <item android:id="@+id/hesabim_menu_ayarlar"
+        android:title="Ayarlar">
+
+    </item>
+    <item android:id="@+id/hesabim_menu_cikis"
+        android:title="Çıkış Yap">
+
+    </item>
+
+</menu>

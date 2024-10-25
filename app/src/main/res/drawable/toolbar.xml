@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    android:opticalInsetBottom="@android:dimen/app_icon_size"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <stroke android:width="0.2dp" android:color="@color/black">
+
+    </stroke>
+    <size android:width="200dp" android:height="80dp">
+
+    </size>
+    <corners android:radius="10dp">
+
+    </corners>
+    <solid android:color="#F2F2F2">
+
+    </solid>
+
+
+
+</shape>
+
+

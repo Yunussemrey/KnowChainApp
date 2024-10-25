@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/girisFragment">
+
+    <fragment
+        android:id="@+id/girisFragment"
+        android:name="com.yunusemre.betaproje.fragment.giris.GirisFragment"
+        android:label="fragment_giris"
+        tools:layout="@layout/fragment_giris" >
+        <action
+            android:id="@+id/girisToOgrenci"
+            app:destination="@id/ogrenciFragment" />
+        <action
+            android:id="@+id/girisSoOrtaokul"
+            app:destination="@id/ortaokulAnaSayfaFragment" />
+        <action
+            android:id="@+id/girisToLiseAnasayfa"
+            app:destination="@id/liseAnasayfaFragment" />
+        <action
+            android:id="@+id/girisToUniAnasayfa"
+            app:destination="@id/universiteAnasayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ogrenciFragment"
+        android:name="com.yunusemre.betaproje.fragment.giris.OgrenciFragment"
+        android:label="fragment_ogrenci"
+        tools:layout="@layout/fragment_ogrenci" >
+        <action
+            android:id="@+id/ogrenciToOrtaKayit"
+            app:destination="@id/ortaokulKayitFragment" />
+        <action
+            android:id="@+id/ogrenciToLiseKayit"
+            app:destination="@id/liseKayitFragment" />
+        <action
+            android:id="@+id/ogrenciToUniKayit"
+            app:destination="@id/universiteKayitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ortaokulKayitFragment"
+        android:name="com.yunusemre.betaproje.fragment.ortaokul.OrtaokulKayitFragment"
+        android:label="fragment_ortaokul_kayit"
+        tools:layout="@layout/fragment_ortaokul_kayit" >
+        <action
+            android:id="@+id/ortaokulKayitToOrtaokulGiris"
+            app:destination="@id/ortaokulGirisFragment" />
+        <action
+            android:id="@+id/ortaKayitToOrtaKull"
+            app:destination="@id/ortaokulKullaniciBilgileriFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ortaokulGirisFragment"
+        android:name="com.yunusemre.betaproje.fragment.ortaokul.OrtaokulGirisFragment"
+        android:label="fragment_ortaokul_giris"
+        tools:layout="@layout/fragment_ortaokul_giris" >
+        <action
+            android:id="@+id/ortaokulGirisToGirisFragment"
+            app:destination="@id/girisFragment" />
+        <action
+            android:id="@+id/ortaokulGirisToOrtaokulAnasayfa"
+            app:destination="@id/ortaokulAnaSayfaFragment" />
+        <action
+            android:id="@+id/ortaokulGirisToOrtaokulKayit"
+            app:destination="@id/ortaokulKayitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ortaokulAnaSayfaFragment"
+        android:name="com.yunusemre.betaproje.fragment.ortaokul.OrtaokulAnaSayfaFragment"
+        android:label="fragment_ortaokul_ana_sayfa"
+        tools:layout="@layout/fragment_ortaokul_ana_sayfa" >
+        <action
+            android:id="@+id/ortaokulAnasayfaToOrtaokulGiris"
+            app:destination="@id/ortaokulGirisFragment" />
+        <action
+            android:id="@+id/action_ortaokulAnaSayfaFragment_to_ortaokulPomodoroFragment"
+            app:destination="@id/ortaokulPomodoroFragment" />
+        <action
+            android:id="@+id/action_ortaokulAnaSayfaFragment_to_ortaokulKumeMesajFragment"
+            app:destination="@id/ortaokulKumeMesajFragment" />
+        <action
+            android:id="@+id/ortaokulAnasayfaToOrtaokulHesabim"
+            app:destination="@id/ortaokulHesabimFragment" />
+        <action
+            android:id="@+id/ortaokulToOrtaDil"
+            app:destination="@id/ortaokulDilAnlatimFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ortaokulPomodoroFragment"
+        android:name="com.yunusemre.betaproje.fragment.ortaokul.OrtaokulPomodoroFragment"
+        android:label="fragment_ortaokul_pomodoro"
+        tools:layout="@layout/fragment_ortaokul_pomodoro" >
+        <action
+            android:id="@+id/ortaokulPomodoroToOrtaokulAnasayfa"
+            app:destination="@id/ortaokulAnaSayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ortaokulKumeMesajFragment"
+        android:name="com.yunusemre.betaproje.fragment.ortaokul.OrtaokulKumeMesajFragment"
+        android:label="fragment_ortaokul_kume_mesaj"
+        tools:layout="@layout/fragment_ortaokul_kume_mesaj" />
+    <fragment
+        android:id="@+id/ortaokulKullaniciBilgileriFragment"
+        android:name="com.yunusemre.betaproje.fragment.ortaokul.OrtaokulKullaniciBilgileriFragment"
+        android:label="fragment_ortaokul_kullanici_bilgileri"
+        tools:layout="@layout/fragment_ortaokul_kullanici_bilgileri" >
+        <action
+            android:id="@+id/ortaokulKullBilgiToOrtaokulAnasayfa"
+            app:destination="@id/ortaokulAnaSayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ortaokulHesabimFragment"
+        android:name="com.yunusemre.betaproje.fragment.ortaokul.OrtaokulHesabimFragment"
+        android:label="fragment_ortaokul_hesabim"
+        tools:layout="@layout/fragment_ortaokul_hesabim" >
+        <action
+            android:id="@+id/hesabimToGiris"
+            app:destination="@id/girisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ortaokulDilAnlatimFragment"
+        android:name="com.yunusemre.betaproje.fragment.ortaokul.OrtaokulDilAnlatimFragment"
+        android:label="fragment_ortaokul_dil_anlatim"
+        tools:layout="@layout/fragment_ortaokul_dil_anlatim" >
+        <action
+            android:id="@+id/ortaokulDilToPaylasim"
+            app:destination="@id/ortaokulPaylasimFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ortaokulPaylasimFragment"
+        android:name="com.yunusemre.betaproje.fragment.ortaokul.OrtaokulPaylasimFragment"
+        android:label="fragment_ortaokul_paylasim"
+        tools:layout="@layout/fragment_ortaokul_paylasim" />
+    <fragment
+        android:id="@+id/liseKayitFragment"
+        android:name="com.yunusemre.betaproje.fragment.lise.LiseKayitFragment"
+        android:label="fragment_lise_kayit"
+        tools:layout="@layout/fragment_lise_kayit" >
+        <action
+            android:id="@+id/liseKayitToLiseKullBilgi"
+            app:destination="@id/liseKullaniciBilgileriFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/liseKullaniciBilgileriFragment"
+        android:name="com.yunusemre.betaproje.fragment.lise.LiseKullaniciBilgileriFragment"
+        android:label="fragment_lise_kullanici_bilgileri"
+        tools:layout="@layout/fragment_lise_kullanici_bilgileri" >
+        <action
+            android:id="@+id/liseKullToLiseAnasayfa"
+            app:destination="@id/liseAnasayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/liseAnasayfaFragment"
+        android:name="com.yunusemre.betaproje.fragment.lise.LiseAnasayfaFragment"
+        android:label="fragment_lise_anasayfa"
+        tools:layout="@layout/fragment_lise_anasayfa" >
+        <action
+            android:id="@+id/liseToLiseHesabim"
+            app:destination="@id/liseHesabimFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/liseKitaplikFragment"
+        android:name="com.yunusemre.betaproje.fragment.lise.LiseKitaplikFragment"
+        android:label="fragment_lise_kitaplik"
+        tools:layout="@layout/fragment_lise_kitaplik" />
+    <fragment
+        android:id="@+id/liseHesabimFragment"
+        android:name="com.yunusemre.betaproje.fragment.lise.LiseHesabimFragment"
+        android:label="fragment_lise_hesabim"
+        tools:layout="@layout/fragment_lise_hesabim" >
+        <action
+            android:id="@+id/liseHesabimToGiris"
+            app:destination="@id/girisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/universiteAnasayfaFragment"
+        android:name="com.yunusemre.betaproje.fragment.üniversite.UniversiteAnasayfaFragment"
+        android:label="fragment_universite_anasayfa"
+        tools:layout="@layout/fragment_universite_anasayfa" />
+    <fragment
+        android:id="@+id/universiteKayitFragment"
+        android:name="com.yunusemre.betaproje.fragment.üniversite.UniversiteKayitFragment"
+        android:label="fragment_universite_kayit"
+        tools:layout="@layout/fragment_universite_kayit" >
+        <action
+            android:id="@+id/uniKayitToUniKullBilgi"
+            app:destination="@id/universiteKullBilgileriFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/universiteKullBilgileriFragment"
+        android:name="com.yunusemre.betaproje.fragment.üniversite.UniversiteKullBilgileriFragment"
+        android:label="fragment_universite_kull_bilgileri"
+        tools:layout="@layout/fragment_universite_kull_bilgileri" >
+        <action
+            android:id="@+id/uniKullBilgiToUniAnasayfa"
+            app:destination="@id/universiteAnasayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/universitePaylasimAkisFragment"
+        android:name="com.yunusemre.betaproje.fragment.üniversite.UniversitePaylasimAkisFragment"
+        android:label="fragment_universite_paylasim_akis"
+        tools:layout="@layout/fragment_universite_paylasim_akis" />
+    <fragment
+        android:id="@+id/universiteHesabimFragment"
+        android:name="com.yunusemre.betaproje.fragment.üniversite.UniversiteHesabimFragment"
+        android:label="fragment_universite_hesabim"
+        tools:layout="@layout/fragment_universite_hesabim" />
+</navigation>

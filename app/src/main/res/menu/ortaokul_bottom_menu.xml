@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/ortaokulAnaSayfaFragment"
+        android:title="Anasayfa"
+        android:icon="@drawable/home">
+
+    </item>
+    <item android:id="@+id/ortaokulPomodoroFragment"
+        android:title="Pomodoro"
+        android:icon="@drawable/clock">
+
+    </item>
+    <item android:id="@+id/ortaokulKumeMesajFragment"
+        android:title="Topluluk"
+        android:icon="@drawable/topluluk">
+
+    </item>
+
+
+</menu>

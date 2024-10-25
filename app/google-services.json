@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "698130341895",
+    "project_id": "betaproje-2f0fb",
+    "storage_bucket": "betaproje-2f0fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698130341895:android:409be86a87d7bef2f1caa2",
+        "android_client_info": {
+          "package_name": "com.yunusemre.betaproje"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3YcFod6w4fm8ENPX1xpkj7qq2sm150Q0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

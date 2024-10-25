@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.mezun.MezunOgrenciMenu">
+
+    <ImageView
+        android:id="@+id/mezunDgsBtn"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dgs"
+        app:layout_constraintBottom_toBottomOf="@+id/mezunKpssBtn"
+        app:layout_constraintStart_toEndOf="@+id/mezunKpssBtn"
+        app:layout_constraintTop_toTopOf="@+id/mezunKpssBtn" />
+
+    <ImageView
+        android:id="@+id/mezunLgsBtn"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lgs"
+        app:layout_constraintBottom_toBottomOf="@+id/mezunYksBtn"
+        app:layout_constraintEnd_toStartOf="@+id/mezunYksBtn"
+        app:layout_constraintTop_toTopOf="@+id/mezunYksBtn" />
+
+    <ImageView
+        android:id="@+id/mezunYksBtn"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/yks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mezunLgsBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41" />
+
+    <ImageView
+        android:id="@+id/mezunKpssBtn"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/kpss"
+        app:layout_constraintEnd_toStartOf="@+id/mezunDgsBtn"
+        app:layout_constraintTop_toBottomOf="@+id/mezunLgsBtn" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mezun olduğun alanda eğitmenlik yapmak ister misin ?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mezunDgsBtn" />
+
+    <TextView
+        android:id="@+id/mezunEgitmenBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eğitmen ol"
+        android:textColor="#C62828"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        tools:layout_editor_absoluteY="506dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

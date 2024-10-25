@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alert_dialog_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/alert_dialog_constraintLayout"
+            android:background="@drawable/ortaokul_settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+                <Button
+                    android:id="@+id/pomodoroDers_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="#F25D07"
+                    android:text="Matematik"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/pomodoroDers_2"
+                    android:backgroundTint="#F25D07"
+                    android:text="Türkçe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pomodoroDers_1" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/pomodoroDers_3"
+                    android:backgroundTint="#F25D07"
+                    android:text="Fen Bilimleri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pomodoroDers_2" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/pomodoroDers_4"
+                    android:backgroundTint="#F25D07"
+                    android:text="Dil ve Anlatım"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pomodoroDers_3" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/pomodoroDers_5"
+                    android:backgroundTint="#F25D07"
+                    android:text="Sosyal Bilgiler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pomodoroDers_4" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/pomodoroDers_6"
+                    android:backgroundTint="#F25D07"
+                    android:text="T.C. İnkılap Tarihi ve Atatürkçülük"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pomodoroDers_5" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/pomodoroDers_7"
+                    android:backgroundTint="#F25D07"
+                    android:text="Din Kültürü ve Ahlak Bilgisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pomodoroDers_6" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/pomodoroDers_8"
+                    android:backgroundTint="#F25D07"
+                    android:text="İngilizce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pomodoroDers_7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
